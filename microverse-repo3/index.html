@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1 id="title">This is the survey form</h1>
+    <p id="description">I had to check the options and select to answer to questions on the survey</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">My name is:</label>
+        <input type="text" id="name" placeholder="Siko" required />
+        <label for="email" id="email-label">My email address is:</label>
+        <input type="email" id="email" placeholder="sikonorbert0@gmail.com" required />
+        <label for="number" id="number-label">My telephone number is:</label>
+        <input type="number" min="9" max="15" placeholder="+4092452523" id="number" />
+        <select id="dropdown">
+            <option>1</option>
+            <option>2</option>
+        </select>
+        <input type="radio" name="email" value="99" />
+        <input type="radio" name="email" value="55" />
+        <input type="checkbox" value="checked" />
+        <input type="checkbox" value="not-checked" />
+        <textarea></textarea>
+        <button id="submit" />
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
