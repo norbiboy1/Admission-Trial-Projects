@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Second Repo</title>
+    <style>
+    div.main-body {
+	display: grid;
+	grid-template-columns: minmax(300px , auto)1fr;
+	grid-template-areas: "navbar mainContent";
+	grid-gap: 20px;
+    }
+
+nav#navbar {
+	grid-area: navbar;
+	position: fixed;
+}
+
+nav#navbar a {
+	display: block;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 10px 0;
+	text-decoration: none;
+	color: black;
+}
+
+main#main-doc {
+	grid-area: mainContent;
+}
+
+header {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+code {
+	background-color: #CCC;
+	display: block;
+	padding: 20px;
+}
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <div class="main-body">
+    <nav id="navbar">
+        <header>Documentation Menu</header>
+        <a href="#What_is_HTML" class="nav-link">
+            What is HTML</a>
+        <a href="#HTML_Documents" class="nav-link">
+                HTML Documents</a>
+        <a href="#HTML_Headings" class="nav-link">
+                    HTML Headings</a>
+        <a href="#Paragraphs" class="nav-link">
+                        Paragraphs</a>
+        <a href="#HTML_Comments" class="nav-link">
+                            HTML Comments</a>
+    </nav>
+    <main id="main-doc">
+        <p>Technical Documentation</p>
+        <section class="main-section" id="What_is_HTML">
+            <header>What is HTML</header>
+            <p>
+                HTML stands for Hyper Text Markup Language.
+            </p>
+            <P>
+                HTML is the standard markup language for creating web pages.
+            </P>
+            <P>
+                HTML describes the structure of a Web page.
+            </P>
+            <P>
+                HTML consists of a series of elements.
+            </P>
+            <P>
+                HTML elements tell the browser how to display the content.
+            </p>
+            <code>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <title>Page Title</title>
+                </head>
+                <body>
+
+                <h1>My First Heading</h1>
+                <p>My first paragraph.</p>
+
+                </body>
+                </html>
+            </code>
+            <h3>Example Explained</h3>
+           <ul>
+                <li>The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document</li>
+                <li>The &lt;html&gt; element is the root element of an HTML page</li>
+                <li>The &lt;head&gt; element contains meta information about the HTML page</li>
+                <li>The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+                <li>The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+                <li>The &lt;h1&gt; element defines a large heading</li>
+                <li>The &lt;p&gt; element defines a paragraph</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="HTML_Documents">
+            <header>HTML Documents</header>
+            <p>
+                All HTML documents must start with a document type declaration: <!DOCTYPE html>.<br>
+                The HTML document itself begins with <html> and ends with </html>.<br>
+                The visible part of the HTML document is between <body> and </body>.
+            </p>
+            <p>
+            <code>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <title>Page Title</title>
+                </head>
+                <body>
+
+                <h1>My First Heading</h1>
+                <p>My first paragraph.</p>
+
+                </body>
+                </html>
+            </code>
+            </p>
+            
+        </section>
+
+        <section class="main-section" id="HTML_Headings">
+            <header>HTML Headings</header>
+            <p>
+                HTML headings are titles or subtitles that you want to display on a webpage.<br>
+                HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.<br>
+                 &lt;h1&gt; defines the most important heading. 
+
+            </p>
+            <code>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </code>
+        </section>
+
+        <section class="main-section" id="Paragraphs">
+            <header>Paragraphs</header>
+            <p>
+                <h1>HTML Paragraphs</h1>
+                A paragraph always starts on a new line, and is usually a block of text.<br>
+                The HTML &lt;p&gt; element defines a paragraph.<br>
+                A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+            </p>
+            <code>
+                <p>This is a paragraph.</p>
+                <p>This is another paragraph.</p>
+            </code>
+        </section>
+
+        <section class="main-section" id="HTML_Comments">
+            <header>HTML Comments</header>
+            <p>
+                HTML comments are not displayed in the browser, but they can help document your HTML source code.
+            </p>
+            <P>
+                With comments you can place notifications and reminders in your HTML code.
+            </p>
+            <code>
+                <!-- This is a comment -->
+                <p>This is a paragraph.</p>
+                <!-- This is also a comment -->
+            </code>
+        </section>
+    </main> 
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</div>
+</body>
+</html>
